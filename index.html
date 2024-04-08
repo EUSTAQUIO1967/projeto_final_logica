@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro De Clientes</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header class="header">
+    <nav class="nav">
+         <h1>Cadastro de Clientes</h1>
+          <menu class="nav-menu">
+            <li>Listar Clientes</li>
+            <li>Sair</li>
+        </menu>
+    </nav>
+</header>
+<main>
+    <section>
+        <div class="formulario">
+            <div class="input-content">
+                <p>
+                    <label for="cpf">CPF</label>
+                    <input type="text" class="cpf" id="cpf" name="cpf" placeholder="CPF do cliente, somente números">
+                </p>
+            </div>
+            <div class="input-content">
+                <p>
+                    <label for="nome">Nome</label>
+                    <input type="text" class="nome" id="nome" name="nome" placeholder="Nome do cliente">
+                </p>
+            </div>
+            <div class="input-content">
+                <p>
+                    <label for="endereco">Endereço</label>
+                    <input type="text" class="endereco" id="endereco" name="endereco" placeholder="Endereço residencial">
+                </p>
+            </div>
+            <div class="input-content">
+                <p>
+                    <label for="telefone">Telefone</label>
+                    <input type="text" class="telefone" id="telefone" name="telefone" placeholder="Telefone residencial com DDD">
+                </p>
+            </div>
+            <div class="input-content">
+                <p>
+                    <label for="saldo">Saldo</label>
+                    <input type="text" class="saldo" id="saldo" name="saldo" placeholder="Saldo">
+                 </p>
+            </div>
+            <div class="input-content">
+                    <button class="btn btn-incluir btn-primary" id="incluir">Incluir</button>
+                    <button class="btn btn-atualizar btn-secondary" id="atualizar">Atualizar</button>
+                    <button class="btn btn-excluir btn-danger" id="excluir">Excluir</button>
+                    <button class="btn btn-buscar-cliente btn-secondary">Selecionar Cliente Por Id</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="display">
+        <table class="tabela">
+            <caption>Lista de Clientes do Banco</caption>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>CPF</th>
+                    <th>Nome</th>
+                    <th>Endereço</th>
+                    <th>Telefone</th>
+                    <th>Saldo</th>
+                </tr>
+            </thead>
+            <tbody class="detalhes-lancamentos">
+
+            </tbody>
+        </table>
+    </section>
+
+</main>
+<footer>
+
+</footer>
+    <script src="./assets/js/cadastro.js"></script>
+</body>
+</html>

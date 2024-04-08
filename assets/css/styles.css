@@ -1,0 +1,187 @@
+@import url('reset.css');
+
+:root{
+    font-size: 62.5%;
+    --color-danger: red;
+    --color-primary: rgb(70, 70, 185);
+    --blue-primary: blue;
+    --color-secondary: orange;
+    --orange-secondary: rgb(199, 151, 62);
+    --black-secondary: rgba(0,0,0,0.5)
+    
+}
+
+
+body{
+   
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--black-secondary);
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1.6rem;
+    padding: 0.2rem 0;
+}
+
+section{
+    max-width: 90rem;
+    width: 100%;
+    margin: 0 auto
+}
+
+.formulario {
+    padding: 0.8rem;
+    margin-bottom: 2rem;
+    background-color: #D0E0E3;
+    box-shadow: 0.2rem 0.2rem 0.4rem 0.2rem var(--black-secondary);
+    min-width: 60rem;
+}
+
+.input-content {
+    max-width: 60rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.6rem;
+
+}
+
+.btn{
+  min-width: 10rem;
+  height: 2.5rem;
+  outline: none;
+  font-weight: 600;
+  border:none;
+  border-radius: 0.2rem;
+}
+
+.btn-primary{
+    background-color: var(--color-primary);
+    color: #FFF;
+}
+
+.btn-secondary{
+    background-color: var(--color-secondary);
+    color: #FFF;
+}
+
+.btn-danger:hover{
+    background-color: var(--color-danger);
+    color: #FFF;
+}
+
+
+.btn-primary:hover{
+    background-color: var(--blue-primary);
+    color: #FFF;
+}
+
+.btn-secondary:hover{
+    background-color: var(--orange-secondary);
+    color: #FFF;
+}
+
+.btn-danger{
+    background-color: #fff;
+    color: grey;
+    border: 1px solid gray;
+}
+
+.header{
+    display:flex;
+    width: 100%;
+    height: 6rem;
+    background-color: #fff;
+    box-shadow: 0.2rem  0.2rem 0.3rem 0.2rem rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.nav {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 90rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header .nav .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+
+}
+
+.header .nav .nav-menu li {
+    display: flex;
+    margin: 0 5rem;
+    font-size: 1.8rem;
+}
+
+.tabela {
+    width: 100%;
+    border: 1p solid black;
+    border-collapse: collapse;
+}
+
+.tabela caption {
+    font-size: 2rem;
+    color: var(--black-secondary);
+
+}
+
+.tabela thead tr th {
+    background-color: blueviolet;
+    color: #fff;
+    font-weight: 800;
+   
+
+}
+
+.tabela th, td{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+    font-weight: bold;
+}
+
+input[type='text']{
+    display: flex;
+    border: 1px solid blueviolet;
+    border-radius: 0.2rem;
+    min-width: 59rem;
+    width: 100%;
+    justify-content: space-evenly;
+    height: 2rem;
+
+}
+
+
+
+input[type='text']:hover{
+    border: 2px solid blueviolet
+}
+
+input[type='text']:focus{
+    border: 2px solid #8fd1eb;
+    border-width: 2px;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+input[type='text']:active{
+    border: 2px solid blueviolet
+}
+
